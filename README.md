@@ -1,2 +1,2 @@
-# dh2
-database homework 2
+# dhHomework2
+Database Homework2
