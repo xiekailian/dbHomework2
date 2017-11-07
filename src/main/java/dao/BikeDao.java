@@ -3,6 +3,16 @@ package dao;
 public interface BikeDao {
 
     /**
+     *
+     */
+    void createTables();
+
+    /**
+     *
+     */
+    void initData();
+
+    /**
      * 根据晚上6点到12点之间，单车归还的最频繁的地点，估计用户地址，完善用户表
      */
     void estimateUserAddress();
