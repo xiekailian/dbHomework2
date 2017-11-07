@@ -1,4 +1,4 @@
-package daoImpl;
+﻿package daoImpl;
 
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
@@ -48,11 +48,11 @@ public class ArrangementDaoImpl implements ArrangementDao {
             Connection connection = DBConfig.getConn();
             Statement stmt = (Statement) connection.createStatement();
 
-            String sql ="load data local infile '/Users/zhujin/Desktop/sharingBike/src/main/java/data/phone.txt' into table dormitories character set utf8 fields terminated by';';" ;
+            String sql ="load data local infile '/Users/kailian/Desktop/sharingBike/src/main/java/data/phone.txt' into table dormitories character set utf8 fields terminated by';';" ;
 
             stmt.execute(sql);
 
-            sql ="load data local infile '/Users/zhujin/Desktop/sharingBike/src/main/java/data/arrange_plan.txt' into table students character set utf8 fields terminated by',';" ;
+            sql ="load data local infile '/Users/kailian/Desktop/sharingBike/src/main/java/data/arrange_plan.txt' into table students character set utf8 fields terminated by',';" ;
 
             stmt.execute(sql);
             stmt.close();
